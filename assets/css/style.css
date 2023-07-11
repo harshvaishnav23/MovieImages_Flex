@@ -1,0 +1,396 @@
+:root {
+    --color-primary: #f6d200;
+    --color-secondary: #ededed;
+    --color-white: #fff;
+    --color-dark: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+ a:link, a:visited{
+    text-decoration: none;
+ }
+
+ html{
+    font-size: 10px;
+ }
+ body{
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Asap', sans-serif;
+}
+
+.section-heading{
+    font-size: 4.8rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+ /* ------------------------------  header - CSS - starts --------------------------- */
+
+
+.site-header{
+    height: 400px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu{
+    background-color: var(--color-primary);
+}
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.site-title{
+    text-transform: capitalize;
+    font-size: 3.6rem;
+}
+
+.site-description{
+    color: var(--color-primary);
+    font-style: italic;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+ /* ------------------------------  main - CSS - starts --------------------------- */
+
+.main-menu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu ul li a{
+    display: block;
+    text-align: center;
+    color: var(--color-dark);
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all .5s ease-in-out;
+}
+
+.main-menu ul li a:hover, .main-menu ul li a:focus{
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+.content-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-area, .rightSidebar{
+    padding: 2rem;
+}
+
+.rightSidebar{
+    flex: 0 0 400px;
+}
+
+ /* ------------------------------  posts - CSS - starts --------------------------- */
+
+.post{
+    background-color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+.post-content > h2{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    padding: 2rem 3rem;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.post-content > p{
+    padding: 3rem;
+    font-size: 1.6rem;
+    color: var(--color-dark);
+}
+
+
+.post-img {
+    height: 350px;
+    
+}
+
+.post-img img, .watch-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ /* ------------------------------  watch card - CSS - starts --------------------------- */
+
+.watch-card{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+.watch-content{
+    padding: 3rem;
+}
+
+.watch-content h3{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.movie-info{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.movie-info span{
+    margin-right: 6px;
+}
+
+.movie-story{
+    margin: 1rem 0;
+}
+.movie-info a{
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+ /* ------------------------------  download - CSS - starts --------------------------- */
+
+ .download-img{
+    background-color: var(--color-dark);
+ }
+
+.download-img img{
+    width: 100%;
+}
+
+.download-content > a{
+    background-color: var(--color-dark);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.cast img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+
+.cast, .genre{
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.cast h4, .genre h4{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.download-info{
+    padding: 2rem 1rem;
+    background-color: var(--color-white);
+}
+
+.download-rating{
+    background-color: var(--color-primary);
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-img{
+    height: 25rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery img a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+ /* ------------------------------  sideBar - CSS - starts --------------------------- */
+
+.sidebar-menu{
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.sidebar-menu h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.sidebar-menu a{
+    display: block;
+    color: var(--color-dark);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+ /* ------------------------------  media query starts --------------------------- */
+
+ @media screen and (min-width: 768px){
+
+ }
+
+
+@media screen and (min-width: 992px) {
+    .main-menu ul{
+        flex-direction: row;
+    }
+    .main-menu ul li{
+        flex-grow: 1;
+    }
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .one-half{
+        flex: 0 0 49%;
+    }
+    .one-third{
+        flex: 0 0 32%;
+    }
+    .one{
+        flex: 0 0 100%;
+    }
+    .watch-card{
+        display: flex;
+    }
+    .watch-img{
+        flex: 0 0 40rem;
+    }
+    .watch-content{
+        flex-grow: 1;
+        align-self: center;
+    }
+    .order-1{
+        order: 1;
+    }
+    .download-content{
+        display: flex;
+    }
+    .download-info{
+        flex-grow: 1;
+    }
+
+    .download-content > a{
+        justify-content: center;
+    }
+    .gallery-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gallery-img{
+        flex: 1 0 30rem;
+        margin-left: 1rem
+
+    }
+    /* .gallery-img:nth-child(1), .gallery-img:nth-child(5), .gallery-img:nth-child(9){
+        flex-basis: 48rem;
+    } */
+
+      /* n = 0 1 2 3 4 ...... */
+
+      /* n = 4, 
+
+      for n = 0,  4n + 1 = 4,
+      for n = 1,  4n + 1 = 5,
+      for n = 2,  4n + 1 = 9, */
+
+    .gallery-img:nth-child(4n + 1){
+        flex-basis: 48rem;
+    }
+
+    /* .gallery-img:nth-child(2), .gallery-img:nth-child(6){
+        flex-basis: 32.5rem;
+    } */
+
+    .gallery-img:nth-child(4n + 2){
+        flex-basis: 32.5rem;
+    }
+
+
+    /* .gallery-img:nth-child(3), .gallery-img:nth-child(7){
+        flex-basis: 25rem;
+    } */
+
+    .gallery-img:nth-child(4n + 3){
+        flex-basis: 25rem;
+    }
+
+
+    /* .gallery-img:nth-child(4), .gallery-img:nth-child(8){
+        flex-basis: 18rem;
+    } */
+
+    .gallery-img:nth-child(4n + 4){
+        flex-basis: 18rem;
+    }
+
+
+    .cast, .genre {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1180px){
+    .content-area{
+        flex-direction: row;
+    }
+
+    .main-content-area{
+        flex-grow: 1;
+    }
+    /* .rightSidebar{
+        flex: 0 0 320px;
+    } */
+}
